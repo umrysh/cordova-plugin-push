@@ -63,7 +63,7 @@
     </config-file>
 
     <preference name="ANDROID_SUPPORT_V13_VERSION" default="28.0.0"/>
-    <preference name="FCM_VERSION" default="18.+"/>
+    <preference name="FCM_VERSION" default="21.1.0"/>
 
     <framework src="com.android.support:support-v13:$ANDROID_SUPPORT_V13_VERSION"/>
     <framework src="me.leolin:ShortcutBadger:1.1.17@aar"/>
@@ -91,7 +91,6 @@
   </platform>
 
   <platform name="ios">
-    <preference name="IOS_FIREBASE_MESSAGING_VERSION" default="~> 6.32.2"/>
 
     <config-file target="config.xml" parent="/*">
       <feature name="PushNotification">
@@ -117,17 +116,8 @@
     <source-file src="src/ios/PushPlugin.m"/>
     <header-file src="src/ios/AppDelegate+notification.h"/>
     <header-file src="src/ios/PushPlugin.h"/>
-
     <framework src="PushKit.framework"/>
 
-    <podspec>
-      <config>
-        <source url="https://cdn.cocoapods.org/"/>
-      </config>
-      <pods use-frameworks="true">
-        <pod name="Firebase/Messaging" spec="$IOS_FIREBASE_MESSAGING_VERSION" />
-      </pods>
-    </podspec>
   </platform>
 
   <platform name="windows">
