@@ -1,6 +1,6 @@
 # Cordova Plugin Push - MODIFIED!!
-##FCM was removed from iOS platform and FCM version is bumped for Android
-##important! this fork is not maintained actively and may and will lag behind master
+# FCM was removed from iOS platform and FCM version is bumped for Android
+# important! this fork is not maintained actively and may and will lag behind master
 
 [![Build Status](https://travis-ci.org/havesource/cordova-plugin-push.svg)](https://travis-ci.org/havesource/cordova-plugin-push)
 
